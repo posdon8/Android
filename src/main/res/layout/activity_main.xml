@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Label for Currency -->
+
+    <!-- Input Field for Amount -->
+
+    <TextView
+        android:id="@+id/currencyLabel"
+        android:layout_width="139dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Currency"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFromAmount"
+        android:layout_width="415dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="44dp"
+        android:background="#AFD7B1"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textColorHint="#78909C"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerFromCurrency"
+        android:layout_width="417dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="164dp"
+        android:background="#AED6B0"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-10dp" />
+
+    <EditText
+        android:id="@+id/editTextToAmount"
+        android:layout_width="415dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="308dp"
+        android:background="#E2AEAE"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="numberDecimal"
+        android:textColorHint="#78909C"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerToCurrency"
+        android:layout_width="401dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="468dp"
+        android:background="#E1ADAD"
+        android:backgroundTint="#E1ADAD"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="6dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
