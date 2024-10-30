@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingTop="12dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="12dp"
+    android:background="@drawable/border"
+    >
+
+    <!-- Hình tròn chứa chữ cái đầu của người gửi -->
+
+    <!-- Nội dung email -->
+    <TextView
+        android:id="@+id/tvSenderIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="8dp"
+        android:backgroundTint="#EFEFEF"
+        >
+
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sender Name"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEmailSnippet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Email snippet goes here..."
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvEmailContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Email snippet goes here..."
+            android:textColor="#757575"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Thời gian email -->
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"
+        android:text="10:42 AM"
+        android:textColor="#757575" />
+</LinearLayout>
